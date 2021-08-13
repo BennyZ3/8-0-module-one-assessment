@@ -211,6 +211,9 @@ function numSeperator(num){
   return Number(result)
 }
 function getBiggestBoxOfficeMovie(movies) {
+  if (!movies.length){
+    return null
+  }
   let biggest = 0
   let top = ''
   for (let movie of movies){
